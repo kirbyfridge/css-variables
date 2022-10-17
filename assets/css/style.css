@@ -1,3 +1,4 @@
+/* Body content displayed in column, flex, & all font is default 16px  */
 body {
     font-size: 16px;
     display: flex;
@@ -5,45 +6,54 @@ body {
     min-height: 100vh;
     justify-content: flex-start;
   }
-  
+
+/* Welcome to the store! */
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
-  
+
+/* Each content header (Camera, Tablet, etc) */
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
   }
-  
+
+/* Top most header with caption */
   header {
     padding: 40px;
     text-align: center;
     background: #13293d;
     color: #fff;
   }
-  
+
+/* Navigation bar */
   nav {
     display: flex;
     background-color: #d8a47f;
   }
-  
+
+/* Individual navigation bar links */
   nav a {
     color: #13293d;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
   }
-  
+
+/* Navigation bar links when hovered over */
   nav a:hover {
     background-color: #fff;
   }
-  
+
+/* Wraps main content so they can stack if display is smaller */
   main {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
+/* Footer */
   footer {
     width: 100%;
     bottom: 0;
@@ -53,7 +63,8 @@ body {
     color: #fff;
     margin-top: auto;
   }
-  
+
+/* All product cards */
   .products {
     flex: 1;
     background-color: #fff;
@@ -62,7 +73,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
+
+/* Individual product cards */
   .card {
     border-style: solid;
     border-width: 1px;
@@ -73,20 +85,24 @@ body {
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
   }
-  
-  .card > header {
+
+/* Product cards and headers curved edges and padding */
+  .card > h2 {
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
   }
-  
+
+/* Aligns prices center within each product card */
   .card > p {
     text-align: center;
   }
-  
+
+/* Each image fit within product cards */
   .card > img {
     width: 100%;
   }
-  
+
+/* Set max width to 768px of contents and nav bar */
   @media screen and (max-width: 768px) {
     main,
     nav {
